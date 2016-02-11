@@ -1,16 +1,26 @@
 
 (configuration-layer/declare-layers '(osx
+                                      better-defaults
                                       ibuffer
-                                      smex
-                                      auto-completion
+                                      spacemacs-ivy
+
+                                      org
+                                      osx
 
                                       html
                                       (shell :variables
+                                             shell-default-position 'bottom
                                              shell-default-shell 'eshell
                                              shell-enable-smart-eshell t)
                                       (clojure :variables
                                                clojure-enable-fancify-symbols t)
+                                      clojure
+                                      emacs-lisp
+                                      markdown
+                                      org
 
+                                      auto-completion
+                                      syntax-checking
                                       version-control
                                       (git :variables
                                            git-gutter-use-fringe t)
