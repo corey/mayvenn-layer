@@ -41,4 +41,5 @@
 ;; TODO: projectile-known-projects
 ;;       add all dirs in ~/workspace
 
-;; TODO: add cider-reset fn and keybindings
+;; TODO: possibly add cider-reset fn and keybindings
+
