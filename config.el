@@ -45,3 +45,5 @@
 
 (mac-auto-operator-composition-mode)
 
+(setq dotspacemacs-whitespace-cleanup 'changed)
+
