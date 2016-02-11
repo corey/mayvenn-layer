@@ -1,19 +1,12 @@
 #+TITLE: mayvenn layer
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../css/readtheorg.css" />
 
-#+CAPTION: logo
-
-# The maximum height of the logo should be 200 pixels.
-[[img/mayvenn.png]]
-
 * Table of Contents                                        :TOC_4_org:noexport:
  - [[Description][Description]]
  - [[Install][Install]]
- - [[Key bindings][Key bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+  This layer attempts to serve as the base configuration for Mayvenn employees using spacemacs!
 
 * Install
 To use this contribution add it to your =~/.spacemacs=
@@ -22,8 +15,3 @@ To use this contribution add it to your =~/.spacemacs=
   (setq-default dotspacemacs-configuration-layers '(mayvenn))
 #+end_src
 
-* Key bindings
-
-| Key Binding     | Description    |
-|-----------------+----------------|
-| ~<SPC> x x x~   | Does thing01   |
