@@ -43,3 +43,5 @@
 
 ;; TODO: possibly add cider-reset fn and keybindings
 
+(mac-auto-operator-composition-mode)
+
