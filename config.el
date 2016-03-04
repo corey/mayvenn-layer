@@ -2,7 +2,6 @@
 (configuration-layer/declare-layers '(osx
                                       better-defaults
                                       ibuffer
-                                      spacemacs-ivy
 
                                       org
                                       osx
