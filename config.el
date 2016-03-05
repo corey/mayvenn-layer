@@ -50,3 +50,22 @@
 ;; (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 
 (setq tab-always-indent 'complete)
+
+(defun magit-denv-section ()
+  (let (denv-clean (eval (= 0 (call-process "denv" nil "*Messages*" nil "check"))))
+    (progn
+      (insert "Env:      ")
+      (if denv-clean
+          (insert (propertize "clean" 'font-lock-face '(:foreground "green")))
+        (insert (propertize "dirty" 'font-lock-face '(:foreground "red"))))
+      (newline))))
+
+(with-eval-after-load 'magit
+  (progn
+    (remove-hook 'magit-status-headers-hook
+                 'magit-denv-section)
+    (magit-add-section-hook 'magit-status-headers-hook
+                            'magit-denv-section
+                            nil
+                            'magit-list-branches
+                            )))
