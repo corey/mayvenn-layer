@@ -48,3 +48,5 @@
 ;; (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 
 (setq tab-always-indent 'complete)
+
+(setq js-indent-level 2)
