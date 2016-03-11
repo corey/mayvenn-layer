@@ -40,8 +40,6 @@
 ;; TODO: projectile-known-projects
 ;;       add all dirs in ~/workspace
 
-;; TODO: possibly add cider-reset fn and keybindings
-
 (mac-auto-operator-composition-mode)
 
 (setq dotspacemacs-whitespace-cleanup 'changed)
