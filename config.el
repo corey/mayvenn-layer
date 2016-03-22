@@ -50,3 +50,5 @@
 (setq tab-always-indent 'complete)
 
 (setq js-indent-level 2)
+
+(blink-cursor-mode)
