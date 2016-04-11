@@ -29,9 +29,9 @@
 (spacemacs|use-package-add-hook smartparens
   :post-config (sp-use-paredit-bindings))
 
-(spacemacs|use-package-add-hook cider
-  :post-init (setq cider-refresh-before-fn "user/stop"
-                   cider-refresh-after-fn "user/go"))
+;; (spacemacs|use-package-add-hook cider
+;;   :post-init (setq cider-refresh-before-fn "user/stop"
+;;                    cider-refresh-after-fn "user/go"))
 
 (spacemacs|use-package-add-hook magit
   :post-init (setq magit-repo-directories "~/workspace"
