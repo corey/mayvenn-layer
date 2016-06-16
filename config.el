@@ -1,29 +1,23 @@
 
-(configuration-layer/declare-layers '(osx
-                                      better-defaults
+(configuration-layer/declare-layers '(better-defaults
                                       ibuffer
 
-                                      org
-                                      osx
+                                      (git :variables git-gutter-use-fringe t)
+                                      github
 
-                                      html
-                                      (shell :variables
-                                             shell-default-position 'bottom
-                                             shell-default-shell 'eshell
-                                             shell-enable-smart-eshell t)
                                       (clojure :variables
                                                clojure-enable-fancify-symbols t)
-                                      clojure
                                       emacs-lisp
                                       markdown
                                       org
 
+                                      html
+
                                       auto-completion
                                       syntax-checking
-                                      version-control
-                                      (git :variables
-                                           git-gutter-use-fringe t)
-                                      github))
+
+                                      (osx :variables
+                                           osx-use-option-as-meta t)))
 
 
 (spacemacs|use-package-add-hook smartparens
