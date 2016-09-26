@@ -5,8 +5,7 @@
                                       (git :variables git-gutter-use-fringe t)
                                       github
 
-                                      (clojure :variables
-                                               clojure-enable-fancify-symbols t)
+                                      clojure
                                       emacs-lisp
                                       markdown
                                       org
@@ -33,8 +32,6 @@
 
 ;; TODO: projectile-known-projects
 ;;       add all dirs in ~/workspace
-
-(mac-auto-operator-composition-mode)
 
 (setq dotspacemacs-whitespace-cleanup 'changed)
 
